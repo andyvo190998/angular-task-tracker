@@ -11,7 +11,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
     RouterOutlet,
     HeaderComponent,
     ButtonComponent,
-    TasksComponent
+    TasksComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
