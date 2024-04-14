@@ -2,6 +2,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component'
+import { TasksComponent } from './components/tasks/tasks.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { HeaderComponent } from './components/header/header.component'
   imports: [
     RouterOutlet,
     HeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    TasksComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

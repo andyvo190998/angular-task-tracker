@@ -12,7 +12,9 @@ export class HeaderComponent {
   title: string = 'Task Tracker';
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
 
+  toggleAddTask() {
+    console.log("toggle")
   }
 }
