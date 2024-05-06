@@ -12,6 +12,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
     HeaderComponent,
     ButtonComponent,
     TasksComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
