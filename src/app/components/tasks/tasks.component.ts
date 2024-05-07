@@ -34,4 +34,8 @@ export class TasksComponent {
       .toggleTask(task)
       .subscribe()
   }
+
+  addTask(task: Task) {
+    this.taskService.addTask(task).subscribe((newTask) => this.tasks.push(newTask))
+  }
 }
