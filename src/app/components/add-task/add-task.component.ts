@@ -19,9 +19,15 @@ export class AddTaskComponent {
   reminder: boolean = false
   onOpenForm: boolean = false
   subscription: Subscription | undefined;
+  updateObj: Task | undefined
 
   constructor( private uiService: UiService ) {
     this.subscription = this.uiService.onToggle().subscribe(value => this.onOpenForm = value)
+    this.subscription = this.uiService.onToggleUpdate().subscribe(value => {
+      this.text = value.text;
+      this.day = value.day;
+      this.reminder = value.reminder
+    })
   }
 
   ngOnInit(): void {}
