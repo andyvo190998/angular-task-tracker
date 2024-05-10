@@ -38,4 +38,14 @@ export class TasksComponent {
   addTask(task: Task) {
     this.taskService.addTask(task).subscribe((newTask) => this.tasks.push(newTask))
   }
+
+  updateTask(task: Task) {
+    this.taskService.updateTask(task).subscribe(updatedTask => {
+      const index = this.tasks.findIndex(t => t.id === updatedTask.id)
+      console.log(index)
+      if (index !== -1) {
+        this.tasks[index] = updatedTask
+      }
+    })
+  }
 }
